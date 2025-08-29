@@ -1,4 +1,8 @@
-idf_component_register(SRCS mlx_crc.c
-                            ganymede_kf_crc.c
-                            ganymede_xfe_crc.c
-                       INCLUDE_DIRS include)
+idf_component_register(
+    SRCS "src/mlx_crc.c"
+         "src/ganymede_kf_crc.c"
+         "src/ganymede_xfe_crc.c"
+    PRIV_INCLUDE_DIRS "src"
+    INCLUDE_DIRS "include"
+    REQUIRES
+)
